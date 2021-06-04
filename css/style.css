@@ -1,0 +1,510 @@
+@font-face {
+  font-family: "Raleway-black";
+  src: url(../fonts/Raleway-Black.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-regular";
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-medium";
+  src: url(fonts\Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-light";
+  src: url(fonts\Raleway-Light.ttf);
+}
+
+:root {
+  --primary: #eebf00;
+  --secondary: #232b38;
+  --ternary: #6c6c6c;
+  --danger: #fe4545;
+  --pure: #fefefe;
+  --light: #f0f0f0;
+  --heaven: #ffffff;
+  --footer: #2d333f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+  height: 4000px;
+  font: menu;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+
+@keyframes Slide_Down {
+  0% {
+    transform: translateY(-250px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+header.top-bar {
+  background: var(--secondary);
+  color: var(--pure);
+  font: menu;
+  padding: 0.75rem 0;
+}
+
+header.top-bar .icons a {
+  margin-right: 0.6rem;
+}
+
+header.top-bar .icons a img {
+  animation: Slide_Down 1.0s ease;
+}
+
+header.top-bar .auth {
+  animation: Slide_Down 1.0s ease;
+}
+
+header.top-bar .auth .divider {
+  padding: 0 1rem;
+  animation: Slide_Down 1.0s ease;
+}
+
+header.top-bar .auth>div a {
+  color: var(--pure);
+  text-decoration: none;
+}
+
+header.top-bar .auth>div span {
+  animation: Slide_Down 1.0s ease;
+}
+
+header.top-bar .auth>div img {
+  margin-right: 0.33rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+nav .top {
+  padding: 1.5rem 0;
+}
+
+nav .top .container h5 {
+  font: menu;
+  margin: 0.25rem;
+}
+
+nav .top .container h6 {
+  font: menu;
+  margin: 0.25rem;
+}
+
+nav .top .contact img {
+  margin-right: 1rem;
+  animation: Slide_Down 1.0s ease;
+}
+
+nav .top .contact {
+  animation: Slide_Down 1.0s ease;
+}
+
+.branding img {
+  animation: Slide_Down 1.0s ease;
+}
+
+.branding {
+  animation: Slide_Down 1.0s ease;
+}
+
+nav .top .time img {
+  margin-right: 1rem;
+  animation: Slide_Down 1.0s ease;
+}
+
+nav .top .time {
+  animation: Slide_Down 1.0s ease;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+nav .navbar a {
+  text-decoration: none;
+  color: var(--secondary);
+  font: menu;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+nav .navbar a.active {
+  color: var(--secondary);
+}
+
+nav .navbar a:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.magic-shadow {
+  position: relative;
+  background: var(--heaven);
+}
+
+.magic-shadow:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 69px;
+  background-image: url(../icons/shadow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -22px;
+  z-index: -1;
+}
+
+.magic-shadow-sm {
+  position: relative;
+  background: var(--heaven);
+}
+
+.magic-shadow-sm:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 69px;
+  background-image: url(../icons/shadow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -22px;
+  z-index: -1;
+}
+
+header.hero {
+  height: 600px;
+  background-image: url(../images/hero.png);
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+header.hero .container {
+  position: relative;
+}
+
+header.hero .welcome span {
+  font: menu;
+  font-size: 1rem;
+  color: var(--secondary);
+  padding-right: 0.5rem;
+}
+
+header.hero h1 {
+  font: menu;
+  color: var(--secondary);
+  font-size: 2.23rem;
+}
+
+header.hero h1 span {
+  color: var(--primary);
+}
+
+header.hero p {
+  font: menu;
+  width: 50%;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: none;
+  line-height: 0.8;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--heaven);
+}
+
+.btn-primary:hover {
+  background: var(--heaven);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: var(--heaven);
+  border: 1px solid var(--secondary);
+  margin-left: 0.53rem;
+}
+
+.btn-secondary:hover {
+  background: var(--heaven);
+  color: var(--secondary);
+}
+
+header.hero .hero-image {
+  position: absolute;
+  top: -40px;
+  right: 40px;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+section.top-products {
+  background: var(--light);
+}
+
+.section-heading {
+  font: menu;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+.section-heading:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-image: url(../icons/hr.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -40px;
+}
+
+section.top-products .food-slider .food-card {
+  background: var(--heaven);
+  padding: 1.5rem 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+section.top-products .food-slider .food-card .product-image img {
+  width: 80%;
+  height: 200px;
+  object-fit: contain;
+  padding-bottom: 1rem;
+}
+
+hr {
+  border: 1px solid var(--light);
+  opacity: 0.8;
+  margin: 1rem;
+}
+
+section.top-products .food-slider .food-card {
+  font: menu;
+  font-size: 1rem;
+  margin-bottom: 0.25;
+}
+
+.text-center {
+  text-align: center;
+}
+
+section.top-products .food-slider .food-card .star {
+  margin-bottom: 0.5rem;
+}
+
+section.top-products .food-slider .food-card .star img {
+  margin-right: 0.25rem;
+}
+
+section.top-products .food-slider .food-card .price {
+  font: menu;
+  color: var(--danger);
+  margin-bottom: 2rem;
+}
+
+section.top-products .food-slider .food-card button {
+  font: menu;
+  color: var(--secondary);
+  background: var(--heaven);
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  display: flex;
+  align-items: center;
+  width: 13.5%;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.food-slider .food-card button img {
+  background: var(--primary);
+  padding: 0.5rem;
+  height: 32px;
+  margin-right: 1.2rem;
+}
+
+section.top-products .food-slider .food-card button:hover {
+  background: var(--primary);
+  color: var(--heaven);
+}
+
+.slick-slide {
+  margin: 0 27px;
+}
+
+.slick-list {
+  margin: 0 -27px;
+}
+
+.top-products .slider-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: var(--primary);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.prev-btn {
+  position: absolute;
+  top: 46%;
+  left: -3rem;
+  z-index: 1;
+}
+
+.next-btn {
+  position: absolute;
+  top: 46%;
+  right: -3rem;
+  z-index: 1;
+}
+
+.top-products .slider {
+  position: relative;
+}
+
+.top-products .btn-wrapper {
+  margin-top: 2rem;
+}
+
+.slick-track {
+  padding: 1rem 0;
+}
+
+header.top-bar .icons button {
+  background: var(--secondary);
+  padding-left: 4px;
+  border: none;
+}
+
+section .about-meal img {
+  width: 85%;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+section.about-meal p {
+  line-height: 1.7;
+  margin-bottom: 4rem;
+  font-size: 1rem;
+}
+
+section.our-services {
+  background: var(--light);
+}
+
+section.our-services .service-card {
+  background: var(--heaven);
+  text-align: center;
+  padding: 2rem;
+  margin-right: 2rem;
+  position: relative;
+}
+section.our-services .service-card img {
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.text-primarys {
+  color: var(--primary);
+}
